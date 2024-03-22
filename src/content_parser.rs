@@ -34,7 +34,7 @@ fn get_enum_fields(content: &str) -> Vec<String> {
     }
     // replace first element since it is not a field with enum
     enum_fields[0] = "enum_value".to_string();
-    debug!("enum_fields: {:?}", enum_fields);
+    // debug!("enum_fields: {:?}", enum_fields);
     enum_fields
 }
 
@@ -74,8 +74,8 @@ fn to_csv_format(enum_fields: &Vec<String>, enum_values: &Vec<String>) -> Vec<St
         csv_content.push(format!("{}", value));
     }
     for c in &csv_content {
-        debug!("line num: {}", c.len());
-        debug!("csv_content: {}", c);
+        // debug!("line num: {}", c.len());
+        // debug!("csv_content: {}", c);
     }
     csv_content
 }
